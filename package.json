@@ -1,0 +1,32 @@
+{
+  "name": "rock.stacker",
+  "version": "0.0.1",
+  "description": "Simple Rock Stacker Game.",
+  "engines": {
+    "node": "0.10",
+    "npm": "1.4"
+  },
+  "dependencies": {
+    "grunt": "~0.4.2",
+    "grunt-contrib-watch": "~0.5.3",
+    "grunt-contrib-copy": "~0.5.0",
+    "backbone": "~1.1.0",
+    "lodash": "~2.4.1",
+    "famous": "11.0.0",
+    "jquery": "~2.1.0",
+    "browserify": "~3.24.1",
+    "grunt-browserify": "~1.3.0",
+    "grunt-contrib-livereload": "0.1.1",
+    "grunt-contrib-uglify": "~0.3.2",
+    "grunt-contrib-clean": "~0.5.0",
+    "grunt-concurrent": "~0.4.3",
+    "time-grunt": "~0.2.9",
+    "grunt-notify": "~0.2.17",
+    "grunt-jscs-checker": "~0.4.0",
+    "grunt-shell": "~0.7.0"
+  },
+  "devDependencies": {
+    "express": "3.x",
+    "grunt-contrib-connect": "~0.7.1"
+  }
+}
