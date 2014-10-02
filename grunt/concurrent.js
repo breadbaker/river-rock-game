@@ -12,6 +12,13 @@ module.exports = function (grunt) {
                 'watch',
                 'connect'
             ]
+        },
+        production: {
+            tasks: [
+                'uglify',
+                'browserify',
+                'copy'
+            ]
         }
     });
 

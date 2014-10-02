@@ -18,7 +18,7 @@ module.exports = function (grunt) {
 
     grunt.registerTask('build', [
         'clean',
-        'concurrent:dev',
+        'concurrent:production',
     ]);
 
     grunt.registerTask('phone', [
