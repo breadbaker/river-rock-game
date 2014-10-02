@@ -181,7 +181,8 @@ _.extend(RockView.prototype, {
             this.physicsEngine.attach(collision, this.particles, particle);
 
             collision.on('collision', _.throttle(function (d) {
-                if( Math.abs(d.overlap) > 5) {
+                if( Math.abs(d.overlap  && navigator.notification) > 5) {
+
                     navigator.notification.vibrate(30);
                 }
             }, 100));
