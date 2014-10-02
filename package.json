@@ -8,6 +8,7 @@
   },
   "dependencies": {
     "grunt": "~0.4.2",
+    "grunt-cli": "^0.1.13",
     "grunt-contrib-watch": "~0.5.3",
     "grunt-contrib-copy": "~0.5.0",
     "backbone": "~1.1.0",
