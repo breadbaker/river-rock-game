@@ -24,7 +24,7 @@ module.exports = {
             },
             numberOfBalls: {
                 type: 'range',
-                value: 8,
+                value: 6,
                 min: 1,
                 max: 20,
                 step: 2

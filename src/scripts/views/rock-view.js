@@ -82,10 +82,12 @@ _.extend(RockView.prototype, {
             origin:[0.5,0.5]
         });
 
+        var numBalls = this.config.ball.numberOfBalls.value;
+
         ball.particle = new Circle({
             radius:ballSize / 2, 
             mass: this.config.ball.mass.value, 
-            position: new Vector(0,0,0)
+            position: new Vector(-numBalls/2 + i * 10,-numBalls/2 + i * 40,0)
         });
 
         this.physicsEngine.addBody(ball.particle);
@@ -177,6 +179,12 @@ _.extend(RockView.prototype, {
 
         _.each(this.particles, function (particle) {
             this.physicsEngine.attach(collision, this.particles, particle);
+
+            collision.on('collision', _.throttle(function (d) {
+                if( Math.abs(d.overlap) > 5) {
+                    navigator.notification.vibrate(30);
+                }
+            }, 100));
         }, this);
     },
 
